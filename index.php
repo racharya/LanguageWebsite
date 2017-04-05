@@ -10,12 +10,7 @@ h1{
 </style>
 </header>
 <body>
-	<?php
-		$greetings = "Hello World!";
-		echo $greetings;
-		?>
-		
-			
+	<h1>Hello World!</h1>		
 </body>
 </html>
 
