@@ -11,8 +11,10 @@ h1{
 </header>
 <body>
 	<h1>
-		<?php 
-			echo "Hello World!"; 
+			<?= "Hello, ". $_GET['name']; //short hand of doing the following
+			// $name = $_GET['name'];
+			// echo $name;
+			//echo "Hello World!"; 
 		?>
 	</h1>		
 </body>
