@@ -1,0 +1,32 @@
+/* General */
+
+.container {
+  width: 960px;
+}
+
+h1{
+  color: white;
+  border:10px;
+  background-color: BLUE;
+  text-align: center;
+
+}
+p{
+  font-size:20px;
+  #text-align : center;
+}
+li{
+  font-size:20px;
+  #text-align : center;
+}
+
+.footer p{
+  font-family: 'Libre Baskerville', sans-serif;
+  color: green;
+  font-size:15px;
+  text-align: center;
+}
+.underline{
+  text-decoration: underline;
+  color:RED;
+}
