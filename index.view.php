@@ -10,9 +10,11 @@ h1{
 </style>
 </header>
 <body>
+<div class="container">
 	<h1>
 		<?= $greeting; ?>
-	</h1>		
+	</h1>
+	</div>		
 </body>
 </html>
 
