@@ -34,4 +34,9 @@
   color: #898989;
 }
 
+.footer p{
+  font-family: 'Libre Baskerville', sans-serif;
+  color: green;
+  font-size:15px;
+  text-align: center;
 }
