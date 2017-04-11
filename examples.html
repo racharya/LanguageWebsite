@@ -87,6 +87,29 @@
       <pre>#!/usr/bin/php</pre>  
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
       <pre>6</pre>
+      
+      <h3>Here is a more complex example of PHP: adventure.php</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">h1</span><span class="blueText">&#62</span> Adventure Quest <span class="blueText">&#60</span><span class="maroonText">/h1</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">h3</span><span class="blueText">&#62</span> Choose A Direction <span class="blueText">&#60</span><span class="maroonText">/h3</span><span class="blueText">&#62</span>
+      <span class="redText">&#60?php</span>
+       <span class="redText">date_default_timezone_set</span>(<span class="maroonText">'MST7MDT'</span>);
+      
+      
+      <span class="blueText">if</span> (<span class="blueText">isset</span>($_GET[<span class="maroonText">'dir'</span>])) {
+              $dirTraveled = $_GET[<span class="maroonText">'dir'</span>];
+              
+              <span class="blueText">if</span> ($dirTraveled == <span class="maroonText">'North'</span>) {
+                  <span class="blueText">echo</span> <span class="redText">date</span>(<span class="maroonText">'h:i:s a'</span>);
+                  <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You Traveled North!"</span>;
+                  <span class="blueText">if</span> (rand(<span class="redText">1</span>, <span class="redText">10</span>) == <span class="redText">5</span>) {
+                      <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found loot!!"</span>;
+                  
+              
+      </pre>
     </div>
   </div>
   
