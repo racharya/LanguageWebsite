@@ -16,8 +16,10 @@
     height: 50px;
     width: 50px;
   }
-/* Menu */
-
+.jumbotron{
+  height: 720px;
+  background-image:url("https://cdn.pixabay.com/photo/2017/02/14/19/16/php-2066704_960_720.jpg");
+}
 .header .menu {
   float: right;
   list-style: none;
