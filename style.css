@@ -27,11 +27,22 @@
   display: inline;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
 .menu a {
   color: #898989;
 }
+h3{
+  text-align:center;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+      }
 
+li {
+  font-size: 20px;
+  }
 .footer p{
   font-family: 'Libre Baskerville', sans-serif;
   color: green;
