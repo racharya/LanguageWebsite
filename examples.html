@@ -42,6 +42,8 @@
   <div class="header">
     <div class="container">
       <h1>Examples of PHP:</h1>
+      
+      <!--SIMPLE EXAMPLE3: HELLOWORLD.PHP-->
       <h3>Here is an simple example of PHP: HelloWorld.php</h3><br>
       <pre>
       <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
@@ -60,6 +62,7 @@
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
       <pre>Hello World!</pre>
       
+      <!--SIMPLE EXAMPLE2: LETSDOMATH.PHP-->
       <h3>Here is an example of PHP using variables, functions, and arithmetic:</h3>
       <pre>
       <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
@@ -88,6 +91,7 @@
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
       <pre>6</pre>
       
+      <!--COMPLEX EXAMPLE1: ADVENTURE.PHP-->
       <h3>Here is a more complex example of PHP: adventure.php</h3>
       <pre>
       <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
@@ -98,129 +102,101 @@
       <span class="redText">&#60?php</span>
        date_default_timezone_set(<span class="maroonText">'MST7MDT'</span>);
       
-      
       <span class="blueText">if</span> (<span class="blueText">isset</span>($_GET[<span class="maroonText">'dir'</span>])) {
               $dirTraveled = $_GET[<span class="maroonText">'dir'</span>];
-              
               <span class="blueText">if</span> ($dirTraveled == <span class="maroonText">'North'</span>) {
                   <span class="blueText">echo</span> date(<span class="maroonText">'h:i:s a'</span>);
                   <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You Traveled North!"</span>;
                   <span class="blueText">if</span> (rand(<span class="redText">1</span>, <span class="redText">10</span>) == <span class="redText">5</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found loot!!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You were eaten by Cthulhu!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You fell in a pit and died!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found your way home!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You have slain the dragon!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You make camp for the night!"</span>;
-                  }
-                  <span class="blueText">else</span> {
+                  } <span class="blueText">else</span> {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 A boring, seemingly endless field lies in front of you..."</span>;
-              }
+                  }
               }
               <span class="blueText">if</span> ($dirTraveled == <span class="maroonText">'West'</span>) {
                   <span class="blueText">echo</span> date(<span class="maroonText">'h:i:s a'</span>);
                   <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You Traveled West!"</span>;
                   <span class="blueText">if</span> (rand(<span class="redText">1</span>, <span class="redText">10</span>) == <span class="redText">5</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found loot!!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You were eaten by Cthulhu!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You fell in a pit and died!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found your way home!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You have slain the dragon!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You make camp for the night!"</span>;
-                  }
-                  <span class="blueText">else</span> {
+                  } <span class="blueText">else</span> {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 A thick forrest is in the distance..."</span>;
-              }
+                  }
               }
               <span class="blueText">if</span> ($dirTraveled == <span class="maroonText">'East'</span>) {
                   <span class="blueText">echo</span> date(<span class="maroonText">'h:i:s a'</span>);
                   <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You Traveled East!"</span>;
                   <span class="blueText">if</span> (rand(<span class="redText">1</span>, <span class="redText">10</span>) == <span class="redText">5</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found loot!!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You were eaten by Cthulhu!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You fell in a pit and died!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found your way home!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You have slain the dragon!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You make camp for the night!"</span>;
-                  }
-                  <span class="blueText">else</span> {
+                  } <span class="blueText">else</span> {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 A rocky mountain looms above..."</span>;
-              }
+                  }
               }
               <span class="blueText">if</span> ($dirTraveled == <span class="maroonText">'South'</span>) {
                   <span class="blueText">echo</span> date(<span class="maroonText">'h:i:s a'</span>);
                   <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You Traveled South!"</span>;
                   <span class="blueText">if</span> (rand(<span class="redText">1</span>, <span class="redText">10</span>) == <span class="redText">5</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found loot!!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">8</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You were eaten by Cthulhu!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">10</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You fell in a pit and died!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">7</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You found your way home!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">18</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You have slain the dragon!"</span>;
-                  }
-                  <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
+                  } <span class="blueText">else if</span> (rand(<span class="redText">1</span>, <span class="redText">20</span>) == <span class="redText">3</span>) {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 You make camp for the night!"</span>;
-                  }
-                  <span class="blueText">else</span> {
+                  } <span class="blueText">else</span> {
                       <span class="blueText">echo</span> <span class="maroonText">"&#60p&#62 A desolate waste is in the distance..."</span>;
-              }
+                  }
               }
         }
         <span class="redText">?></span>
-        
         <span class="blueText">&#60form</span> name=<span class="maroonText">"Form"</span> method=<span class="maroonText">"get"</span> action=<span class="maroonText">"adventure.php"</span><span class="blueText">&#62</span>
         
         <span class="redText">&#60?php</span>
-        
         <span class="blueText">echo</span> <span class="maroonText">"&#60input type='submit' name='dir' value='West'&#62"</span>;
         <span class="blueText">echo</span> <span class="maroonText">"&#60input type='submit' name='dir' value='North'&#62"</span>;
         <span class="blueText">echo</span> <span class="maroonText">"&#60input type='submit' name='dir' value='East'&#62"</span>;
         <span class="blueText">echo</span> <span class="maroonText">"&#60input type='submit' name='dir' value='South'&#62"</span>;
-        
         <span class="blueText">echo</span>  <span class="maroonText">"&#60br /&#62"</span>;
         <span class="blueText">echo</span>  <span class="maroonText">"&#60br /&#62"</span>;
-        
         <span class="redText">?&#62</span>
-        <span class="blueText">"&#60br /&#62"</span>;
-        <span class="blueText">"&#60/ form&#62"</span>;   
+        <span class="blueText">"&#60</span><span class="maroonText">br /</span><span class="blueText">"&#62</span>
+        <span class="blueText">"&#60</span><span class="maroonText">/form</span><span class="blueText">"&#62</span>
       </pre>
+      
+      <!--NEED THIS!!!>>****This is how to run and expected output*****-->
       <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
       <pre><span class="redText">***[#!/usr/bin/php](MAYBE)***</span></pre>  
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
@@ -228,6 +204,7 @@
     </div>
   </div>
   
+  <!-- V This is the Footer V -->
   <div class="footer">
     <div class="container">
       <div class="row">
