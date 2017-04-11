@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Examples</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styleaboutphp.css" rel="stylesheet">
+</head>
+
+<style>
+  .footer p 
+  {
+      font-family: 'Libre Baskerville', sans-serif;
+      color: green;
+      font-size: 15px;
+      text-align: center;
+  }
+  
+  .container
+  {
+      width: 960px;
+  }
+  
+  .redText
+  {
+      color:red;
+  }
+  
+  .blueText
+  {
+      color:blue;
+  }
+  
+  .maroonText
+  {
+      color:#993333;
+  }
+  </style>  
+  
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>Examples of PHP:</h1>
+      <h3>Here is an simple example of PHP: HelloWorld.php</h3><br>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      
+      <span class="redText">&#60?php</span>
+      <span class="blueText">echo</span> <span class="marronText">&#34Hello World!&#34</span>;
+      <span class="redText">?></span>
+      
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+    </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php</pre>  
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre>Hello World!</pre>
+      
+      <h3>Here is an example of PHP using variables, functions, and arithmetic:</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      
+      <span class="redText">&#60?php</span>
+      $x = <span class="redText">1</span>;
+      $y = <span class="redText">2</span>;
+      $z = <span class="redText">3</span>;
+      
+      <span class="blueText">function</span> letsDoMath() {
+          <span class="blueText">global</span> $x, $y, $z;
+          $z = $z + $y + $x;
+      }
+      
+      letsDoMath();
+      echo $z;
+      <span class="redText">?></span>
+      
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php</pre>  
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre>6</pre>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            &copy 2017 Team gulls
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
