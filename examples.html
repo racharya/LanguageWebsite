@@ -91,6 +91,48 @@
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
       <pre>6</pre>
       
+      
+      <h3>Here is an example of the Selection Sort in PHP: selectionSort.php</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      
+      <span class="redText">&#60?php</span>
+          <span class="blueText">function</span> selectionSort(<span class="blueText">array</span> $ary) {
+              $n = sizeof($ary);
+              <span class="blueText">for</span> ($i = 0; $i &#60 $n; $i++) {
+                  $index = $i;
+                  $val = $ary[$i];
+                  <span class="blueText">for</span> ($j = $i + <span class="redText">1</span>; $j &#60 $n; $j++) {
+                      <span class="blueText">if</span> ($ary[$j] &#60 $val) {
+                          $index = $j;
+                          $val = $ary[$j];
+                      }
+                  }
+                  $ary[$index] = $ary[$i];
+                  $ary[$i] = $val;
+              }
+              <span class="blueText">return</span> $ary;
+          }
+          </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php [LIST]</pre>
+      
+      <p>Here is an example:
+      <pre>
+      $ary = <span class="blueText">array</span>(4,3,5,10,2,900,6,12,42,7);
+      $ret = selectionSort($ary);
+      print_r($ret);
+      </pre>
+      $arr = array(255,1,22,3,45,5);
+      print_r($result);
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre></pre>
+          
+              
+      
+      
       <!--COMPLEX EXAMPLE1: ADVENTURE.PHP-->
       <h3>Here is a more complex example of PHP: adventure.php</h3>
       <pre>
