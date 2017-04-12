@@ -192,7 +192,7 @@
           <span class="blueText">if</span>($length &#60= <span class="redText">1</span>){
               <span class="blueText">return</span> $array;
           }
-          else{
+          <span class="blueText">else</span>{
           
               <span class="greenText">// select an item to act as our pivot point, since list is unsorted first position is easiest</span>
               $pivot = $array[<span class="redText">0</span>];
@@ -206,7 +206,7 @@
                   <span class="blueText">if</span>($array[$i] &#60 $pivot){
                       $left[] = $array[$i];
                   }
-                  else{
+                  <span class="blueText">else</span>{
                       $right[] = $array[$i];
                   }
               }
