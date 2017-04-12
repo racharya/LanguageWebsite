@@ -9,3 +9,4 @@ $names = [
 foreach($names as $name){
 	echo $name.' ';
 }
+?>
