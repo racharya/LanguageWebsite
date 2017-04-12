@@ -1,3 +1,3 @@
 <?php
 $greeting = "Hello World!";
-require 'index.view.php';
+require '/PHP_Siteindex.view.php';
