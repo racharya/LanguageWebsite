@@ -12,10 +12,10 @@ function quick_sort($array)
 
 		// select an item to act as our pivot point, since list is unsorted first position is easiest
 		$pivot = $array[0];
-		
+
 		// declare our two arrays to act as partitions
 		$left = $right = array();
-		
+
 		// loop and compare each item in the array to the pivot value, place item in appropriate partition
 		for($i = 1; $i < count($array); $i++)
 		{
@@ -26,7 +26,7 @@ function quick_sort($array)
 				$right[] = $array[$i];
 			}
 		}
-		
+
 		// use recursion to now sort the left and right lists
 		return array_merge(quick_sort($left), array($pivot), quick_sort($right));
 	}
