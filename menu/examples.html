@@ -32,6 +32,11 @@
       color:blue;
   }
   
+  .greenText
+  {
+      color:green;
+  }
+  
   .maroonText
   {
       color:#993333;
@@ -43,8 +48,8 @@
     <div class="container">
       <h1>Examples of PHP:</h1>
       
-      <!--SIMPLE EXAMPLE3: HELLOWORLD.PHP-->
-      <h3>Here is an simple example of PHP: HelloWorld.php</h3><br>
+      <!--SIMPLE EXAMPLE1: HELLOWORLD.PHP-->
+      <h3>Here is a simple example of PHP: HelloWorld.php</h3><br>
       <pre>
       <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
       <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
@@ -54,9 +59,8 @@
       <span class="blueText">echo</span> <span class="marronText">&#34Hello World!&#34</span>;
       <span class="redText">?></span>
       
-      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
-      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
-    </pre>
+      <span class="blueText">&#60</span><span class="maroonText">/body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">/html</span><span class="blueText">&#62</span> </pre>
       <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
       <pre>#!/usr/bin/php</pre>  
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
@@ -81,15 +85,163 @@
       
       letsDoMath();
       <span class="blueText">echo</span> $z;
-      <span class="redText">?></span>
+      <span class="redText">?&#62</span>
       
-      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
-      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
-      </pre>
+      <span class="blueText">&#60</span><span class="maroonText">/body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">/html</span><span class="blueText">&#62</span> </pre>
       <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
       <pre>#!/usr/bin/php</pre>  
       <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
       <pre>6</pre>
+      
+      
+      <!--EXAMPLE3: ARRAYEXAMPLE.PHP-->
+       <h3>Here is an example of an Array in PHP: arrayExample.php</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      
+      <span class="greenText">#prints team members names</span>
+      <span class="redText">&#60?php</span>
+      $names = [
+      <span class="maroonText">'Rachana'</span>,
+      <span class="maroonText">'Marshall'</span>,
+      <span class="maroonText">'Jacob'</span>
+      ];
+      
+      <span class="blueText">foreach</span>($names <span class="blueText">as</span> $name){
+          <span class="blueText">echo</span> $name.<span class="maroonText">' '</span>;
+      }
+      <span class="redText">?&#62</span>
+      
+      <span class="blueText">&#60</span><span class="maroonText">/body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">/html</span><span class="blueText">&#62</span> </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php</pre>  
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre>'Rachanna' 'Marshall' 'Jacob'</pre>
+      
+      
+      <!--EXAMPLE4: SELECTIONSORT.PHP-->
+      <h3>Here is an example of the Selection Sort in PHP: selectionSort.php</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      
+      <span class="redText">&#60?php</span>
+          <span class="blueText">function</span> selectionSort(<span class="blueText">array</span> $ary) {
+              $n = sizeof($ary);
+              <span class="blueText">for</span> ($i = <span class="redText">0</span>; $i &#60 $n; $i++) {
+                  $index = $i;
+                  $val = $ary[$i];
+                  <span class="blueText">for</span> ($j = $i + <span class="redText">1</span>; $j &#60 $n; $j++) {
+                      <span class="blueText">if</span> ($ary[$j] &#60 $val) {
+                          $index = $j;
+                          $val = $ary[$j];
+                      }
+                  }
+                  $ary[$index] = $ary[$i];
+                  $ary[$i] = $val;
+              }
+              <span class="blueText">return</span> $ary;
+          }
+      <span class="redText">?&#62</span>
+      
+      <span class="blueText">&#60</span><span class="maroonText">/body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">/html</span><span class="blueText">&#62</span> </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php [LIST]</pre>
+      
+      <p>Here is an example:
+      <pre>
+      $ary = <span class="blueText">array</span>(<span class="redText">4</span>,<span class="redText">3</span>,<span class="redText">5</span>,<span class="redText">10</span>,<span class="redText">2</span>,<span class="redText">900</span>,<span class="redText">6</span>,<span class="redText">12</span>,<span class="redText">42</span>,<span class="redText">7</span>);
+      $ret = selectionSort($ary);
+      print_r($ret); </pre>
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre>
+      Array
+      (
+          [0] => 2
+          [1] => 3
+          [2] => 4
+          [3] => 5
+          [4] => 6
+          [5] => 7
+          [6] => 10
+          [7] => 12
+          [8] => 42
+          [9] => 900
+      ) </pre>
+      
+      
+      <!--EXAMPLE5: QUICKSORT.PHP-->
+      <h3>Here is an example of the quick Sort in PHP: quick_sort.php</h3>
+      <pre>
+      <span class="blueText">&#60</span><span class="maroonText">!doctype</span> <span class="redText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">html</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">body</span><span class="blueText">&#62</span>
+      <span class="redText">&#60?php</span>
+      $unsorted = <span class="blueText">array</span>(<span class="redText">0</span>,<span class="redText">5</span>,<span class="redText">8</span>,<span class="redText">1</span>,<span class="redText">9</span>,<span class="redText">2</span>,<span class="redText">7</span>,<span class="redText">6</span>,<span class="redText">3</span>,<span class="redText">4</span>);
+      <span class="blueText">quick_sort</span>($array)
+      {
+          <span class="greenText">// find array size</span>
+          $length = count($array);
+          <span class="greenText">// base case test, if array of length 0 then jsut return array to caller</span>
+          <span class="blueText">if</span>($length &#60= <span class="redText">1</span>){
+              <span class="blueText">return</span> $array;
+          }
+          <span class="blueText">else</span>{
+          
+              <span class="greenText">// select an item to act as our pivot point, since list is unsorted first position is easiest</span>
+              $pivot = $array[<span class="redText">0</span>];
+              
+              <span class="greenText">// declare our two arrays to act as partitions</span>
+              $left = $right = array();
+              
+              <span class="greenText">// loop and compare each item in the array to the pivot value, place item in appropriate partition</span>
+              <span class="blueText">for</span>($i = <span class="redText">1</span>; $i &#60 count($array); $i++)
+              {
+                  <span class="blueText">if</span>($array[$i] &#60 $pivot){
+                      $left[] = $array[$i];
+                  }
+                  <span class="blueText">else</span>{
+                      $right[] = $array[$i];
+                  }
+              }
+              
+              <span class="greenText">// use recursion to now sort the left and right lists</span>
+              <span class="greenText">return</span> array_merge(quick_sort($left), <span class="blueText">array</span>($pivot), quick_sort($right));
+          }
+      }
+      <span class="redText">?&#62</span>
+      
+      <span class="blueText">&#60</span><span class="maroonText">/body</span><span class="blueText">&#62</span>
+      <span class="blueText">&#60</span><span class="maroonText">/html</span><span class="blueText">&#62</span> </pre>
+      <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
+      <pre>#!/usr/bin/php [LIST]</pre>
+      
+      <p>Here is an example:
+      <pre>
+      $sorted = quick_sort($unsorted);
+      print_r($sorted); </pre>
+      <p>The output would look like this on the local host web server and from the command above in terminal/console:</p>
+      <pre>
+      Array
+      (
+          [0] => 0
+          [1] => 1
+          [2] => 2
+          [3] => 3
+          [4] => 4
+          [5] => 5
+          [6] => 6
+          [7] => 7
+          [8] => 8
+          [9] => 9
+      ) </pre>
+          
       
       <!--COMPLEX EXAMPLE1: ADVENTURE.PHP-->
       <h3>Here is a more complex example of PHP: adventure.php</h3>
@@ -193,8 +345,7 @@
         <span class="blueText">echo</span>  <span class="maroonText">"&#60br /&#62"</span>;
         <span class="redText">?&#62</span>
         <span class="blueText">"&#60</span><span class="maroonText">br /</span><span class="blueText">"&#62</span>
-        <span class="blueText">"&#60</span><span class="maroonText">/form</span><span class="blueText">"&#62</span>
-      </pre>
+        <span class="blueText">"&#60</span><span class="maroonText">/form</span><span class="blueText">"&#62</span> </pre>
       
       <!--NEED THIS!!!>>****This is how to run and expected output*****-->
       <p>To run this, you would need first run a web server, such as apache, and go to your local host. However, if you were to just leave the body of this, then you could execute the .php file via the command-line script:
